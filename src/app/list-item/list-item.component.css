@@ -4,6 +4,10 @@
   padding: 9px 0;
 }
 
+:host(:first-child) .row {
+  border-top: 0;
+}
+
 .icon-column {
   flex: 0 0 26px;
   padding: 0 11px;

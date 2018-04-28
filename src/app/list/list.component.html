@@ -1,6 +1,4 @@
 <div class="list-container">
-  <div *ngFor="let mail of mails">
-    <app-list-item [mail]="mail">
-    </app-list-item>
-  </div>
+  <app-list-item [mail]="mail" *ngFor="let mail of mails">
+  </app-list-item>
 </div>
