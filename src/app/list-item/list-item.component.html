@@ -1,13 +1,12 @@
-<div>
-  NAME: {{ mail.from.name }}
+<div class="row">
+  <div class="icon-column">
+    <div class="icon">
+      {{ mail.from.name[0] }}
+    </div>
+  </div>
+  <div class="content">
+    <div class="name">{{ mail.from.name }}</div>
+    <div class="subject">{{ mail.subject }}</div>
+    <div class="body">{{ mail.body }}</div>
+  </div>
 </div>
-<div>
-  EMAIL: {{ mail.from.email }}
-</div>
-<div>
-  SUBJECT: {{ mail.subject }}
-</div>
-<div>
-  BODY: {{ mail.body }}
-</div>
-<br><br>

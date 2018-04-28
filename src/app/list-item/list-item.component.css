@@ -1,0 +1,40 @@
+.row {
+  display: flex;
+  border-top: 1px solid #EAEAEA;
+  padding: 9px 0;
+}
+
+.icon-column {
+  flex: 0 0 26px;
+  padding: 0 11px;
+}
+
+.icon {
+  font-size: 11px;
+  text-align: center;
+  line-height: 26px;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  background-color: #5F3BBA;
+  color: white;
+}
+
+.content {
+  flex: 1 1 auto;
+  max-width: calc(100% - 48px);
+  color: #202020;
+}
+
+.content > div {
+  font-size: 13px;
+  line-height: 18px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.content .body {
+  color: #666666;
+}

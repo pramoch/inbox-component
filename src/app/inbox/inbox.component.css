@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.inbox-container {
+  overflow: hidden;
+  height: 100%;
+}
+
+.header {
+  height: 51px;
+  line-height: 58px;
+  display: flex;
+  font-weight: 500;
+}
+
+.empty-column {
+  flex: 0 0 48px;
+}
+
+.inbox-column {
+  flex: 1 1 auto;
+  color: #323332;
+  font-size: 15px;
+}
+
+.filter-column {
+  flex: 0 0 auto;
+  padding: 0 20px;
+  color: #0F78D7;
+  font-size: 13px;
+}
+
+app-list {
+  height: calc(100% - 51px);
+}
