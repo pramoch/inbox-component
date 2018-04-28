@@ -3,6 +3,10 @@
   height: 100%;
 }
 
+app-list-item {
+  cursor: pointer;
+}
+
 ::-webkit-scrollbar {
   width: 16px;
 }

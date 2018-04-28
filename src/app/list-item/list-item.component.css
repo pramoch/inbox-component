@@ -1,11 +1,15 @@
+:host(:first-child) .row {
+  border-top: 0;
+}
+
 .row {
   display: flex;
   border-top: 1px solid #EAEAEA;
   padding: 9px 0;
 }
 
-:host(:first-child) .row {
-  border-top: 0;
+.row:hover {
+  background:#EAEAEA;
 }
 
 .icon-column {
