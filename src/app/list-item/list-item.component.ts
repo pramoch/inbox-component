@@ -44,7 +44,7 @@ export class ListItemComponent implements OnInit {
     }
   }
 
-  onSelect() {
+  onClick() {
     this.selected = true;
     this.select.emit(this);
   }

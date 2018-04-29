@@ -17,12 +17,14 @@ export class ListComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSelect(mail: ListItemComponent) {
-    if (this.selectedItem) {
-      this.selectedItem.selected = false;
-    }
+  onSelect(item: ListItemComponent) {
+    if (item !== this.selectedItem) {
+      if (this.selectedItem) {
+        this.selectedItem.selected = false;
+      }
 
-    this.selectedItem = mail;
+      this.selectedItem = item;
+    }
   }
 
 }

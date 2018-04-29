@@ -1,7 +1,7 @@
 <div class="row" [class.selected]="selected">
   <div class="icon-column">
-    <div class="icon" [ngStyle]="{ 'background-color': color }" (click)="onSelect()">
-      {{ mail.from.name[0] }}
+    <div class="icon" [ngStyle]="{ 'background-color': selected ? 'white' : color }" (click)="onClick()" >
+      {{ selected ? "&#10003;" : mail.from.name[0] }}
     </div>
   </div>
   <div class="content">
