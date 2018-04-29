@@ -20,7 +20,24 @@ export class InboxComponent implements OnInit {
 
   getMails(): void {
     this.mailService.getMails(this.endpoint)
-      .subscribe(mails => this.mails = mails);
+      .subscribe(mails => {
+        this.mails = mails.filter(mail => {
+          return this.isValidMail(mail);
+        });
+      });
+  }
+
+  isValidMail(mail): boolean {
+    // name and email are required
+    // subject or body must exists
+    if (mail.from
+      && mail.from.name
+      && mail.from.email
+      && (mail.subject || mail.body)) {
+      return true;
+    }
+
+    return false;
   }
 
 }

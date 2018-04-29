@@ -1,6 +1,6 @@
 import { Mail } from './Mail';
 
-export const MAILS: Mail[] = [
+export const MAILS: any[] = [
   {
     from: {
       name: 'Now TV',
@@ -71,6 +71,34 @@ export const MAILS: Mail[] = [
       email: 'events@human-race.co.uk'
     },
     subject: 'Your chance to take on the marathon',
+    body: 'Do you feel inspired to take on one of Europe\'s most highly regarded and popular marathons?'
+  },
+  // no sender
+  {
+    subject: 'Grab another Pass, you need to be watching this...',
+    body: 'Oscar winners Sir Anthony Hopkins and Ed Harris join an impressive cast boasting the likes of Thandie Newton, James Marsden and Jeffrey Wright.'
+  },
+  // no subject & body
+  {
+    from: {
+      name: 'ASICS Greater Manchester Marathon',
+      email: 'events@human-race.co.uk'
+    }
+  },
+  // no body
+  {
+    from: {
+      name: 'ASICS Greater Manchester Marathon',
+      email: 'events@human-race.co.uk'
+    },
+    subject: 'Your chance to take on the marathon',
+  },
+  // no subject
+  {
+    from: {
+      name: 'ASICS Greater Manchester Marathon',
+      email: 'events@human-race.co.uk'
+    },
     body: 'Do you feel inspired to take on one of Europe\'s most highly regarded and popular marathons?'
   }
 ];

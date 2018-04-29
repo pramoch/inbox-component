@@ -6,7 +6,7 @@
   </div>
   <div class="content">
     <div class="name">{{ mail.from.name }}</div>
-    <div class="subject">{{ mail.subject }}</div>
+    <div class="subject">{{ mail.subject || "(No Subject)" }}</div>
     <div class="body">{{ mail.body }}</div>
   </div>
 </div>
