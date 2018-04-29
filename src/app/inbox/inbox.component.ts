@@ -28,11 +28,12 @@ export class InboxComponent implements OnInit {
   }
 
   isValidMail(mail): boolean {
-    // name and email are required
+    // name, email, date are required
     // subject or body must exists
     if (mail.from
       && mail.from.name
       && mail.from.email
+      && mail.date
       && (mail.subject || mail.body)) {
       return true;
     }

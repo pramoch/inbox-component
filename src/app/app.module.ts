@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { DatePipe } from '@angular/common';
 
 
 import { AppComponent } from './app.component';
@@ -21,7 +22,7 @@ import { MailService } from './mail.service';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [MailService],
+  providers: [MailService, DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

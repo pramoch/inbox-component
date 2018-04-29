@@ -24,7 +24,6 @@
   width: 26px;
   height: 26px;
   border-radius: 13px;
-  background-color: #5F3BBA;
   color: white;
 }
 
@@ -46,4 +45,19 @@
 
 .content .body {
   color: #666666;
+}
+
+.subject-row {
+  display: flex;
+}
+
+.subject {
+  flex: 1 1 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.date {
+  flex: 0 0 auto;
 }
