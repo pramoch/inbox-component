@@ -88,17 +88,17 @@ export const MAILS: any[] = [
   // no body
   {
     from: {
-      name: 'ASICS Greater Manchester Marathon',
-      email: 'events@human-race.co.uk'
+      name: 'Now TV',
+      email: 'nowtv@test.com'
     },
-    subject: 'Your chance to take on the marathon',
+    subject: 'Grab another Pass, you need to be watching this...'
   },
   // no subject
   {
     from: {
-      name: 'ASICS Greater Manchester Marathon',
-      email: 'events@human-race.co.uk'
+      name: 'Investopedia Terms',
+      email: 'investopedia@test.com'
     },
-    body: 'Do you feel inspired to take on one of Europe\'s most highly regarded and popular marathons?'
+    body: 'Fibonacci retracement is a term used in technical analysis that refers to areas of support (price stops going lower) or resistance (price stops going higher).'
   }
 ];
