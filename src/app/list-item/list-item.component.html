@@ -5,7 +5,15 @@
     </div>
   </div>
   <div class="content">
-    <div class="name">{{ mail.from.name }}</div>
+    <div class="name-row">
+      <div class="name">{{ mail.from.name }}</div>
+      <div class="action" *ngIf="selected" >
+        <i class="material-icons">delete</i>
+        <i class="material-icons">mail_outline</i>
+        <i class="material-icons">flag</i>
+        <i class="material-icons">star_border</i>
+      </div>
+    </div>
     <div class="subject-row">
       <div class="subject">{{ mail.subject || "(No Subject)" }}</div>
       <div class="date">{{ date }}</div>

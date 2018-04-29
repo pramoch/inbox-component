@@ -58,17 +58,26 @@
   color: #666666;
 }
 
-.subject-row {
+.subject-row, .name-row {
   display: flex;
 }
 
-.subject {
+.subject, .name {
   flex: 1 1 auto;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.date {
+.date, .action {
   flex: 0 0 auto;
+}
+
+.action i {
+  font-size: 18px;
+  color: #666666;
+}
+
+.action i:hover {
+  color: black;
 }
