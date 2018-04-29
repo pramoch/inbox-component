@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Mail } from '../mail';
 import { DatePipe } from '@angular/common';
 
@@ -9,6 +9,9 @@ import { DatePipe } from '@angular/common';
 })
 export class ListItemComponent implements OnInit {
   @Input() mail: Mail;
+  @Output() select = new EventEmitter<ListItemComponent>();
+
+  selected = false;
   color: string;
   date: string;
   colors = [
@@ -39,6 +42,11 @@ export class ListItemComponent implements OnInit {
     } else {
       this.date = this.datePipe.transform(date, 'MMM dd');
     }
+  }
+
+  onSelect() {
+    this.selected = true;
+    this.select.emit(this);
   }
 
 }

@@ -1,4 +1,4 @@
 <div class="list-container">
-  <app-list-item [mail]="mail" *ngFor="let mail of mails">
+  <app-list-item [mail]="mail" *ngFor="let mail of mails" (select)="onSelect($event)">
   </app-list-item>
 </div>
