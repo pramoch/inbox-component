@@ -33,7 +33,3 @@
   color: #0F78D7;
   font-size: 13px;
 }
-
-app-list {
-  height: calc(100% - 51px);
-}
