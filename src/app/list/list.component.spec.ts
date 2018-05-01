@@ -91,6 +91,11 @@ describe('ListComponent', () => {
     fixture.detectChanges();
   });
 
+  afterEach(() => {
+    component.mails = [];
+    fixture.detectChanges();
+  });
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
