@@ -6,4 +6,5 @@
 
 - Install [Node.js](https://nodejs.org).
 - Run `npm install -g @angular/cli` to install [Angular CLI](https://github.com/angular/angular-cli) globally.
+- Run `npm install` to install project's dependencies.
 - Run `ng serve` for a dev server. Navigate to http://localhost:4200/.
