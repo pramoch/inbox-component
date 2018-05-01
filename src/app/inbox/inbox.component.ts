@@ -10,6 +10,7 @@ import { MailService } from '../mail.service';
 })
 export class InboxComponent implements OnInit {
   @Input() endpoint: string;
+  @Input() pageSize: number;
   mails: Mail[];
 
   constructor(private mailService: MailService) { }

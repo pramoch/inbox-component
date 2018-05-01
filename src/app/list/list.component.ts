@@ -9,6 +9,7 @@ import { ListItemComponent } from '../list-item/list-item.component';
 })
 export class ListComponent implements OnInit {
   @Input() mails: Mail[];
+  @Input() pageSize: number;
 
   selectedItem: ListItemComponent;
 
@@ -24,6 +25,18 @@ export class ListComponent implements OnInit {
       }
 
       this.selectedItem = item;
+    }
+  }
+
+  onScroll(event: any) {
+    const element = event.target;
+
+    if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+      if (this.pageSize * 2 > this.mails.length) {
+        this.pageSize = this.mails.length;
+      } else {
+        this.pageSize *= 2;
+      }
     }
   }
 
