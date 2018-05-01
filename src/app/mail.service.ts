@@ -10,7 +10,7 @@ export class MailService {
 
   constructor(private http: HttpClient) { }
 
-  getMails(endpoint: string): Observable<Mail[]> {
+  getMails(endpoint: string): Observable<any[]> {
     if (endpoint === 'local') {
       return of(MAILS);
     } else {
