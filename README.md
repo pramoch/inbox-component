@@ -3,11 +3,13 @@
 ![image](https://user-images.githubusercontent.com/4627941/39432496-d78902ee-4cbd-11e8-844c-7fbfde2ff2ef.png)
 
 ## How to run
-
 - Install [Node.js](https://nodejs.org).
 - Run `npm install -g @angular/cli` to install [Angular CLI](https://github.com/angular/angular-cli) globally.
 - Run `npm install` to install project's dependencies.
 - Run `ng serve` for a dev server. Navigate to http://localhost:4200/.
+
+## How to test
+- Run `ng test` to run unit test.
 
 ## Configuration
 
@@ -32,6 +34,8 @@ Responsive design
 Handle data error and empty data e.g. no sender, no subject/body
 
 Handle large list with lazy loading (pageSize)
+
+Unit test
 
 Click at circle icon to select mail
 
